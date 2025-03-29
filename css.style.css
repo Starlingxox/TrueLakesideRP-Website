@@ -1,0 +1,182 @@
+
+/* Base Styles */
+:root {
+    --navy: #002366;
+    --dark: #111111;
+    --gray: #777777;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.sticky-header {
+    background-color: var(--dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/lakeside-bg-1.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--light);
+}
+
+/* Section Styling */
+.section-dark {
+    background-color: var(--dark);
+    color: white;
+    padding: 4rem 0;
+}
+
+.section-light {
+    background-color: var(--light);
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Rules Tabs */
+.rules-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: #0044cc;
+}
+
+.rule-tab {
+    display: none;
+}
+
+.rule-tab ol {
+    line-height: 2;
+}
+
+/* CAD Box */
+.cad-code-box {
+    background: white;
+    color: var(--dark);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    max-width: 500px;
+}
+
+.code-display {
+    font-family: monospace;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background: #f0f0f0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--navy);
+}
+
+/* Staff List */
+.staff-list {
+    list-style: none;
+    padding: 0;
+}
+
+.staff-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Discord Button */
+.discord-btn {
+    display: inline-block;
+    background: #5865F2;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+}
